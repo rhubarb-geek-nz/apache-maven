@@ -17,10 +17,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 #
-# $Id: package.sh 280 2023-12-08 13:35:41Z rhubarb-geek-nz $
+# $Id: package.sh 290 2023-12-12 18:43:07Z rhubarb-geek-nz $
 #
 
-VERSION=3.8.8
+VERSION=3.9.6
 PKGNAME=maven
 ZIPFILE="apache-$PKGNAME-$VERSION-bin.tar.gz"
 IDENTIFIER=nz.geek.rhubarb.maven

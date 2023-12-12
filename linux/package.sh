@@ -17,10 +17,10 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>
 #
-# $Id: package.sh 277 2023-12-08 03:23:33Z rhubarb-geek-nz $
+# $Id: package.sh 289 2023-12-12 18:42:14Z rhubarb-geek-nz $
 #
 
-VERSION=3.8.8
+VERSION=3.9.6
 INTDIR="$(pwd)"
 SPECFILE="$INTDIR/rpm.spec"
 TGTPATH="$INTDIR/rpm.dir"

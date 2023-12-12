@@ -17,10 +17,10 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>
 #
-# $Id: package.ps1 285 2023-12-12 10:52:46Z rhubarb-geek-nz $
+# $Id: package.ps1 289 2023-12-12 18:42:14Z rhubarb-geek-nz $
 #
 
-$MAVEN_VERSION = "3.8.8"
+$MAVEN_VERSION = "3.9.6"
 $JANSI_TAG = 'jansi-2.4.0'
 $ZIPFILE = "apache-maven-$MAVEN_VERSION-bin.zip"
 $URL = "https://dlcdn.apache.org/maven/maven-3/$MAVEN_VERSION/binaries/$ZIPFILE"
@@ -74,14 +74,14 @@ If(!(test-path -PathType container $path))
 @'
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="*" Name="Apache Maven 3.8.8" Language="1033" Version="3.8.8" Manufacturer="maven.apache.org" UpgradeCode="66C107E1-0655-4DB5-8608-6B26C3EADD6A">
-    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Platform="x64" Description="Maven build tool" Comments="Maven 3.8.8" />
+  <Product Id="*" Name="Apache Maven 3.9.6" Language="1033" Version="3.9.6" Manufacturer="maven.apache.org" UpgradeCode="66C107E1-0655-4DB5-8608-6B26C3EADD6A">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Platform="x64" Description="Maven build tool" Comments="Maven 3.9.6" />
     <MediaTemplate EmbedCab="yes" />
     <Feature Id="ProductFeature" Title="setup" Level="1">
       <ComponentGroupRef Id="ProductComponents" />
     </Feature>
     <Upgrade Id="{66C107E1-0655-4DB5-8608-6B26C3EADD6A}">
-      <UpgradeVersion Maximum="3.8.8" Property="OLDPRODUCTFOUND" OnlyDetect="no" IncludeMinimum="yes" IncludeMaximum="no" />
+      <UpgradeVersion Maximum="3.9.6" Property="OLDPRODUCTFOUND" OnlyDetect="no" IncludeMinimum="yes" IncludeMaximum="no" />
     </Upgrade>
     <InstallExecuteSequence>
       <RemoveExistingProducts After="InstallInitialize" />
@@ -93,7 +93,7 @@ If(!(test-path -PathType container $path))
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFiles64Folder">
         <Directory Id="INSTALLPARENT" Name="Apache Software Foundation">
-          <Directory Id="INSTALLDIR" Name="Apache Maven 3.8.8">
+          <Directory Id="INSTALLDIR" Name="Apache Maven 3.9.6">
           </Directory>
         </Directory>
       </Directory>
