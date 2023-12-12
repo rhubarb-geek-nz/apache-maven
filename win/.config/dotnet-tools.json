@@ -3,13 +3,13 @@
   "isRoot": true,
   "tools": {
     "rhubarb-geek-nz.dir2wxs": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "commands": [
         "dir2wxs"
       ]
     },
     "rhubarb-geek-nz.txt2rtf": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "commands": [
         "txt2rtf"
       ]
